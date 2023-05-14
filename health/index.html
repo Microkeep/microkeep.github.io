@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>麦普健康 - 回归健康本源</title>
+	<meta name="keywords" content="汉麻,工业大麻,火麻,蛋白粉,汉麻粉,汉麻,火麻,工业大麻,麦普健康,麦克基普,Microkeep,麦普, 大麦一品" />
+	<meta name="description" content="麦普健康，是麦克基普旗下健康科技业务板块，致力于汉麻在功能性食品中的研发、应用和推广，为追求健康的新生代、新消费人群提供“回归健康本源、品质生活新主张”的最佳解决方案。" />
+	<meta name="author" content="Microkeep" />
+	<meta name="copyright" content="Microkeep" />
+	<link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+	<link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontAwesome.css">
+	<link rel="stylesheet" href="assets/css/hero-slider.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+
+	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+
+	<div class="fixed-side-navbar">
+		<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#home"><span>首页</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#about-us"><span>关于我们</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact-us"><span>联系我们</span></a></li>
+		</ul>
+	</div>
+
+	<div class="clearfix row " style="width: 100%;position:fixed;background:rgba(0,0,0,0.70);z-index:999">
+		<div class="menu">
+			<div class="nav-menu nav-menu-left">
+				<a href="#home" class="no-pl">
+					<i class="logo"></i>
+				</a>
+			</div>
+
+			<div class="nav-menu nav-menu-right" id="nav-menu-right">
+				<div class="btn-burger-menu" id="btn-burger-menu"></div>
+			</div>
+			<div class="right-menu">
+				<nav class="right clearfix nav" id="nav">
+					<li class="nav-menu ">
+						<a href="#home" class="clean-link" id="#home" onClick='doClose(this,"#home");'>
+							首页
+							<i class="separator"></i>
+						</a>
+					</li>
+
+					<li class="nav-menu ">
+						<a href="#about-us" class="clean-link " id="#about-us" onClick='doClose(this,"#about-us");'>
+							关于我们
+							<i class="separator"></i>
+						</a>
+					</li>
+
+					<li class="nav-menu ">
+						<a href="#contact-us" class="clean-link" id="#contact-us"
+							onClick='doClose(this,"#contact-us");'>
+							联系我们
+							<i class="separator"></i>
+						</a>
+					</li>
+
+					<li class="nav-menu ">
+						<a href="../zh-tw/" class="clean-link">
+							麥普國際
+							<i class="separator"></i>
+						</a>
+					</li>
+
+				</nav>
+			</div>
+		</div>
+	</div>
+	<script>
+		function doClose(s, linkname) {
+
+			var ua = navigator.userAgent.toLowerCase();
+			var links = document.getElementsByClassName("clean-link");
+			j = links.length;
+
+			for (var i = 0; i < j; i++) {
+				links[i].className = "clean-link";
+			}
+
+			var l = document.getElementById(linkname);
+			if (l != null) {
+				l.className = l.className + " showline";
+			}
+
+
+			var obj = document.getElementById("nav");
+			c = obj.className;
+			if (c != null && c.indexOf('show') > -1) {
+				obj.className = obj.className.replace('show', '');
+			}
+
+			var navlogo = document.getElementById("btn-burger-menu");
+			navlogo.className = "btn-burger-menu";
+
+		};
+	</script>
+	<!-- <div style="width:0px;height:0px"><img src="assets/img/logo-300.jpg" alt="logo" /></div> -->
+
+
+	<div class="parallax-content baner-content" id="home">
+		<video autoplay loop controls disablePictureInPicture controlslist="nodownload noplaybackrate"
+		src="assets/video/microkeep-hemp-hearts-microcapsule-powder-2022.mp4"></video>
+	</div>
+
+	<div class="service-content" id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="left-text">
+						<h4>关于我们</h4>
+						<div class="line-dec"></div>
+						<p>麦普健康，是麦克基普旗下健康科技业务板块，致力于汉麻在功能性食品中的研发、应用和推广，为追求健康的新生代、新消费人群提供“回归健康本源、品质生活新主张”的最佳解决方案。</p>
+						<ul>
+							<li>
+								<div style="display:inline;padding-right:5px;"><img src="assets/images/mark.svg"
+										style="max-width:14px;margin-top:-4px;"></div>
+								<div style="display:inline">面对市场，我们快速满足用户需求</div>
+							</li>
+							<li>
+								<div style="display:inline;padding-right:5px;"><img src="assets/images/mark.svg"
+										style="max-width:14px;margin-top:-4px;"></div>
+								<div style="display:inline">面对客户，我们超越客户满意度</div>
+							</li>
+							<li>
+								<div style="display:inline;padding-right:5px;"><img src="assets/images/mark.svg"
+										style="max-width:14px;margin-top:-4px;"></div>
+								<div style="display:inline">面对产品，我们坚守良心品质</div>
+							</li>
+							<li>
+								<div style="display:inline;padding-right:5px;"><img src="assets/images/mark.svg"
+										style="max-width:14px;margin-top:-4px;"></div>
+								<div style="display:inline">面对品牌，我们予智予力成就卓越</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="service-item">
+								<h4>专业专注</h4>
+								<div class="line-dec"></div>
+								<p class="contents">秉承科学态度和工匠精神，专注于“回归健康本源”的产品和服务。</p>
+								<p class="contents" style="font-weight:800;color:#fff;text-align:center !important;">
+									精诚所至，金石为开</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="service-item">
+								<h4>品质为本</h4>
+								<div class="line-dec"></div>
+								<p class="contents">用高品质的产品和服务引领人们高品质生活的新方式，先追求品质再追求品牌。</p>
+								<p class="contents" style="font-weight:800;color:#fff;text-align:center !important;">
+									一丝不苟，精益求精</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="service-item">
+								<h4>诚信立足</h4>
+								<div class="line-dec"></div>
+								<p class="contents">诚信乃品牌之魂，忠于用户和伙伴，即忠于品牌自身，小信诚则大信立。</p>
+								<p class="contents" style="font-weight:800;color:#fff;text-align:center !important;">
+									言必诚信，行必忠正</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="service-item">
+								<h4>创新致远</h4>
+								<div class="line-dec"></div>
+								<p class="contents">不断的洞察市场变化，不断的创新产品和服务，不断的满足广大消费者需求。</p>
+								<p class="contents" style="font-weight:800;color:#fff;text-align:center !important;">
+									创新致远，笃行不倦</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container contact-us" id="contact-us">
+			<div class="row">
+				<div class="col-md-3 companylogo1">
+					<img src="assets/images/logo-portrait.svg" class="logo" style="max-width:180px"></img>
+				</div>
+
+				<div class="col-md-4 address">
+					<p style="font-size:14px;margin-bottom:0px;margin-top:15px;">
+					<div style="color:#fff !important;display:inline-block;text-align:center;" class="address-fa"><i
+							class="fa fa-id-card-o address-fa"></i></div>
+					<div style="color:#fff !important;display:inline-block;">北京麦克基普健康科技有限公司</div>
+					</p>
+					<!-- <p style="font-size:14px;margin-bottom:0px;margin-top:15px;">
+					<div style="color:#fff !important;display:inline-block;text-align:center;" class="address-fa"><i
+							class="fa fa-map-marker address-fa"></i></div>
+					<div style="color:#fff !important;display:inline-block;">北京市朝阳区建国路华贸中心3号楼12层</div>
+					</p> -->
+					<p style="font-size:14px;margin-top:10px;margin-bottom:15px;">
+					<div style="color:#fff !important;display:inline-block;text-align:center;" class="address-fa"><i
+							class="fa fa-envelope address-fa"></i></div>
+					<div style="color:#fff !important;display:inline-block;">service@microkeep.com</div>
+					</p>
+					<p style="font-size:14px;margin-bottom:0px;margin-top:15px;">
+					<div style="color:#fff !important;display:inline-block;text-align:center;" class="address-fa"><i
+							class="fa fa-phone address-fa"></i></div>
+					<div style="color:#fff !important;display:inline-block;">400-600-9992 (09:00-18:00)</div>
+					</p>
+
+				</div>
+				<div class="col-md-3 companylogo2">
+					<img src="assets/images/logo-portrait.svg" class="logo" style="max-width:180px"></img>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<!--<footer style="padding:20px 0px 10px 0px">-->
+	<footer style="padding:0px 0px 10px 0px">
+		<div class="container">
+			<div class="row" style="text-align:left">
+				<div class="col-md-12">
+					<p style="border-top:1px solid rgba(250,250,250,0.3);text-align:left;margin-top:20px;padding-top:10px"
+						class="bottom-line"></p>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom:10px">
+				<div class="col-md-4 copyright">
+					<div style="display:inline-block;color:#a1a1a1;padding-right:10px;" class="copyright-item notlast">
+						&copy;2023 麦克基普</div>
+				</div>
+				<div class="col-md-8 medias">
+				
+					<!--<div style="display:inline-block;color:#a1a1a1;padding-right:10px;" class="copyright-item notlast" >京公网安备xxxxxxxx</div>-->
+					<div style="display:inline-block;color:#a1a1a1;padding-right:10px;" class="copyright-item notlast">
+						<a href="https://beian.miit.gov.cn/" style="color:#a1a1a1">京ICP备2021030248号</a>
+					</div>
+					<div style="display:inline-block;color:#a1a1a1;padding-right:10px;" class="copyright-item">
+						增值电信经营许可京B2-20214549</div>
+					<div style="display:inline-block;color:#a1a1a1;padding-right:10px;" class="copyright-item">
+						京食药网食备202120089</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function openCity(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			document.getElementById(cityName).style.display = "block";
+		}
+
+		function querycode() {
+			var code = $('#txt_code').val();
+			if (code.length > 0 && code != "请输入16位防伪码") {
+				var url = "https://china3-15.com/module/GetCode_getjson.ashx?action=add&callback=?";
+				var data = { c: code, key: "347ebf8d172e977ad09d583a6687cd4f" };
+				$.getJSON(url, data, function (backdata) {
+					document.getElementById('showresult').innerHTML = "<p>" + backdata.result + "</p>";
+					document.getElementById('showresult').style.visibility = "visible";
+				});
+			}
+			else {
+				document.getElementById('showresult').innerHTML = "";
+				document.getElementById('showresult').style.visibility = "hidden";
+			}
+		}
+
+
+	</script>
+
+	<script>
+		$(document).ready(function () {
+
+			var anchorname = window.location.hash;
+			if (anchorname != "") {
+				var l = document.getElementById(anchorname);
+				if (l != null) {
+					l.className = l.className + " showline";
+				}
+			} else {
+				var l = document.getElementById("#home");
+				if (l != null) {
+					l.className = l.className + " showline";
+				}
+			}
+
+
+			// Add smooth scrolling to all links
+			$(".fixed-side-navbar a, .primary-button a, .nav-menu a").on('click', function (event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+
+
+					var links = document.getElementsByClassName("clean-link");
+					j = links.length;
+
+					for (var i = 0; i < j; i++) {
+						links[i].className = "clean-link";
+					}
+
+
+					var l = document.getElementById(this.hash);
+					if (l != null) {
+						l.className = l.className + " showline";
+					}
+
+
+				} // End if
+			});
+
+			$(".nav-menu-right").on('click', function (event) {
+				var obj = document.getElementById("nav");
+				var navlogo = document.getElementById("btn-burger-menu");
+				c = obj.className;
+				if (c != null && c.indexOf('show') > -1) {
+					obj.className = obj.className.replace('show', '');
+					navlogo.className = "btn-burger-menu";
+
+				} else {
+					obj.className = obj.className + ' show';
+					navlogo.className = navlogo.className + " cha";
+				}
+			});
+
+			$('#txt_code').on('keypress', function (event) {
+				if (event.keyCode == 13) {
+					querycode();
+				}
+			});
+
+
+
+
+		});
+
+
+
+	</script>
+
+
+</body>
+
+</html>
