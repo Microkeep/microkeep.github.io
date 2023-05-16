@@ -601,6 +601,7 @@ header p {
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   margin: 0 0 1.5em 0;
+  max-width: 360px;
 }
 
 header h2+p {
